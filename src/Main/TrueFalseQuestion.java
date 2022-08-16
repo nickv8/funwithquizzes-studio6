@@ -16,7 +16,9 @@ public class TrueFalseQuestion extends Question {
     @Override
     public boolean checkAnswer(String answer) {
 
-        if(answer.toUpperCase().equals(this.getTheAnswer().toUpperCase())){
+        String actualAnswer = this.getTheAnswer();
+
+        if(answer.toUpperCase().equals(actualAnswer.toUpperCase())){
             return true;
         } else {
             return false;
